@@ -1,9 +1,7 @@
 import http from "node:http";
 
 const server = http.createServer((req, res) => {
-  if (req.url === "/tampil") {
-    // const ha = document.createElement("h1");
-    // ha.textContent = "Tigana Reymansyah";
+  if (req.url === "/tampil" && req.method === "GET") {
     res.end ("Tigana Reymansyah");
   }
 });
